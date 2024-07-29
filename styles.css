@@ -1,0 +1,111 @@
+body {
+    font-family: Roboto, Cantarell, -apple-system, BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2017/02/02/15/15/bottle-2032980_1280.jpg");
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1;
+     /* Ensure the pseudo-element is behind the content */
+}
+
+    .content {
+    max-width: 80%; /* Adjust this value to your desired max width */
+    margin: auto; /* Centers the div horizontally */
+    padding: 20px;
+    background-color: #f7ecec;
+    border: 5px solid #284f4f;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #3c484d;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 45px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #694839;
+}
+
+button {
+    padding: 10px;
+    color: rgb(247, 218, 218);
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border: 5px;
+    box-shadow: 2px 5px #f4d9d9;
+    border-radius: 5px;
+}
+
+#increment-btn {
+    background: #525446;
+}
+
+#save-btn {
+    background: #692e2e;
+}
+button#increment-btn:hover{
+    background-color: #2d5c60;
+    color: #d28a69;
+}
+
+#save-btn:hover {
+background-color:#2d5c60;
+color:#d28a69;
+}
+
+p {
+    text-align: center;
+    margin: 15px;
+    padding: 3px;
+}
+
+#save-el {
+    font-size: 20px;
+    color: #3c484d;
+}
+
+p:hover {
+    border: 5px;
+    background-color: #83d7d7;
+    border-radius: 5px;
+    box-shadow: 2px 8px #783c21;
+    font-size: 35px;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 14px; 
+    }
+
+    button {
+        font-size: 12px; 
+        padding: 10px; 
+        margin: 10px;
+    }
+}
+
+
+
